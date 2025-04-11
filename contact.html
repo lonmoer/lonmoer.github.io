@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact [Your Company Name] for expert environmental services. Request a consultation or quote via phone, email, or our online form.">
+    <title>Contact Us - [Your Company Name]</title>
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-logo">
+                <a href="index.html">[Your Company Name]</a>
+            </div>
+             <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <!-- <li><a href="about.html">About Us</a></li> -->
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                &#9776; <!-- Hamburger Icon -->
+            </button>
+        </div>
+    </header>
+
+    <main class="page-section">
+        <div class="container">
+            <h1 class="section-title" style="text-align: left; margin-bottom: 2rem;">Get In Touch</h1>
+            <p style="margin-bottom: 3rem;">We are ready to discuss your environmental needs. Please contact us using the information below or fill out the form, and we'll respond promptly.</p>
+
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p><strong>Phone:</strong> <a href="tel:+1[YourPhoneNumber]">[Your Phone Number]</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:[YourEmailAddress]">[Your Email Address]</a></p>
+                    <p><strong>Service Area:</strong> [Your Primary Service Region, e.g., Greater [Your City] Area, State of [Your State]]</p>
+                    <p><strong>Business Hours:</strong> [Your Hours, e.g., Monday - Friday, 8:30 AM - 5:00 PM]</p>
+                    <!-- Optional: Add Physical Address if relevant -->
+                    <!-- <p><strong>Address:</strong><br>[Your Street Address]<br>[Your City, State, Zip Code]</p> -->
+                    <!-- Optional: Add a Google Maps Embed Here -->
+                </div>
+
+                <div class="contact-form-section">
+                    <h2>Send Us a Message</h2>
+                    <p class="form-notice"><strong>Important:</strong> This form requires setup on your web hosting (backend script) or a third-party service (like Netlify Forms, Formspree, Basin) to actually send emails.</p>
+                    <!--
+                        Replace "#" in the action attribute with your actual form endpoint URL
+                        provided by your backend script or third-party service.
+                    -->
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="phone">Phone Number (Optional):</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                         <div class="form-group">
+                            <label for="company">Company (Optional):</label>
+                            <input type="text" id="company" name="company" placeholder="Your company name">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject / Service of Interest:</label>
+                            <input type="text" id="subject" name="subject" placeholder="e.g., Phase I ESA Quote, General Inquiry" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Please describe your project or question" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> [Your Company Name]. All Rights Reserved.</p>
+             <p>
+                <a href="tel:+1[YourPhoneNumber]">[Your Phone Number]</a> |
+                <a href="mailto:[YourEmailAddress]">[Your Email Address]</a>
+             </p>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for Mobile Menu Toggle -->
+     <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        menuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('nav-active');
+            const expanded = mainNav.classList.contains('nav-active');
+            menuToggle.setAttribute('aria-expanded', expanded);
+        });
+    </script>
+</body>
+</html>

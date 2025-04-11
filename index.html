@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[Your Company Name] - Providing expert environmental consulting and services including [mention 2-3 key services]. Reliable solutions for compliance and risk management.">
+    <title>[Your Company Name] - Environmental Services</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-logo">
+                <a href="index.html">[Your Company Name]</a>
+                <!-- Optional: Use an image logo instead -->
+                <!-- <a href="index.html"><img src="images/your-logo.png" alt="[Your Company Name] Logo"></a> -->
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <!-- <li><a href="about.html">About Us</a></li> --> <!-- Uncomment if you add an About page -->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                &#9776; <!-- Hamburger Icon -->
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Expert Environmental Solutions</h2>
+            <p>Reliable, compliant, and efficient environmental services tailored to your needs. Partner with us to navigate regulations, manage risks, and protect your assets and the environment.</p>
+            <a href="contact.html" class="cta-button">Request a Consultation</a>
+        </div>
+    </section>
+
+    <main>
+        <section class="page-section intro-section">
+            <div class="container">
+                 <h2 class="section-title">Your Trusted Environmental Partner</h2>
+                 <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem auto;">[Your Company Name] is a dedicated environmental services firm committed to providing high-quality consulting and practical solutions. We help businesses, developers, and industries navigate complex environmental regulations, mitigate liability, and achieve their project goals sustainably. Our core expertise lies in comprehensive site assessments, regulatory compliance, and effective remediation strategies.</p>
+            </div>
+        </section>
+
+        <section class="page-section featured-services bg-white">
+            <div class="container">
+                <h2 class="section-title">Our Core Services</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>[Service 1 Name, e.g., Phase I ESAs]</h3>
+                        <p>[Brief description of Service 1 highlighting key benefits for the client. Keep it concise.]</p>
+                        <a href="services.html#service1" class="learn-more-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="service-item">
+                        <h3>[Service 2 Name, e.g., Compliance Audits]</h3>
+                        <p>[Brief description of Service 2 highlighting key benefits for the client. Keep it concise.]</p>
+                        <a href="services.html#service2" class="learn-more-link">Learn More &rarr;</a>
+                    </div>
+                    <div class="service-item">
+                         <h3>[Service 3 Name, e.g., Remediation Oversight]</h3>
+                        <p>[Brief description of Service 3 highlighting key benefits for the client. Keep it concise.]</p>
+                        <a href="services.html#service3" class="learn-more-link">Learn More &rarr;</a>
+                    </div>
+                </div>
+                 <div class="view-all-services">
+                     <a href="services.html" class="cta-button">View All Services</a>
+                 </div>
+            </div>
+        </section>
+
+        <section class="page-section why-choose-us">
+             <div class="container">
+                 <h2 class="section-title">Why Choose [Your Company Name]?</h2>
+                 <ul>
+                     <li><strong>Expertise & Experience:</strong> Leverage our team's deep industry knowledge and practical experience.</li>
+                     <li><strong>Reliability & Accuracy:</strong> Depend on timely, thorough, and accurate assessments and reporting.</li>
+                     <li><strong>Regulatory Compliance Focus:</strong> We ensure your projects meet all applicable environmental standards.</li>
+                     <li><strong>Client-Centric Approach:</strong> We provide tailored solutions and clear communication to meet your specific needs.</li>
+                     <li><strong>Cost-Effective Solutions:</strong> We aim for efficient strategies that manage risk without unnecessary expense.</li>
+                 </ul>
+             </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> [Your Company Name]. All Rights Reserved.</p>
+            <p>
+                <a href="tel:+1[YourPhoneNumber]">[Your Phone Number]</a> |
+                <a href="mailto:[YourEmailAddress]">[Your Email Address]</a>
+                <!-- Optional: Add Location -->
+                <!-- | [Your City, State] -->
+            </p>
+            <!-- Optional: Add links to privacy policy or terms if needed -->
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for Mobile Menu Toggle -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+
+        menuToggle.addEventListener('click', function() {
+            mainNav.classList.toggle('nav-active');
+            const expanded = mainNav.classList.contains('nav-active');
+            menuToggle.setAttribute('aria-expanded', expanded);
+        });
+    </script>
+</body>
+</html>
