@@ -245,7 +245,7 @@ img {
 
 /* Make text inside service items black for readability on light backgrounds */
 .page-section.featured-services.parallax-section .service-item p {
-    color: #000000 !important; /* Force black color */
+    color: #333333 !important; /* Force black color */
     /* Optionally, make it slightly less harsh than pure black */
     /* color: #333333 !important; */
 }
