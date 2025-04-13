@@ -518,3 +518,57 @@ img {
     .contact-info, .contact-form-section { padding: 1.5rem; }
 
 }
+
+/* Parallax Background for Featured Services */
+.page-section.featured-services.parallax-section { /* Target the specific section */
+    background-image: url('images/parallax-bg.jpg'); /* IMPORTANT: Adjust this path! */
+
+    /* Parallax Effect */
+    background-attachment: fixed; /* This creates the parallax effect */
+
+    /* Background Image Styling */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat;     /* Do not repeat the image */
+    background-size: cover;           /* Scale the image to cover the entire section */
+
+    /* Override background color (if needed, though removing bg-white class is better) */
+    background-color: transparent;
+
+    /* Ensure section has enough height (optional, adjust as needed) */
+    /* min-height: 400px; */
+
+    /* --- IMPORTANT: Text Readability --- */
+    /* Add an overlay for better text contrast */
+    position: relative; /* Required for the pseudo-element overlay */
+    z-index: 1;
+}
+
+/* Semi-transparent overlay */
+.page-section.featured-services.parallax-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity - Adjust color/opacity as needed */
+    z-index: -1; /* Place overlay behind content */
+}
+
+/* Make text white for better readability on the dark overlay/image */
+.page-section.featured-services.parallax-section h2,
+.page-section.featured-services.parallax-section hr.divider,
+.page-section.featured-services.parallax-section h4, /* Assuming service titles are h4 */
+.page-section.featured-services.parallax-section p { /* Assuming service text is p */
+    color: #ffffff !important; /* Force white text color */
+}
+
+/* You might need to adjust the divider color too */
+ .page-section.featured-services.parallax-section hr.divider {
+    border-color: #f4623a !important; /* Example: Keep the original orange, or change to white: #ffffff */
+ }
+
+/* Adjust icon colors if needed (they seem to be orange, which might be okay) */
+/* .page-section.featured-services.parallax-section .service-icon-element {
+    color: #ffffff !important; /* Or another contrasting color */
+/* } */
